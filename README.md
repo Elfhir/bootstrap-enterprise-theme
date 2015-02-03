@@ -1,4 +1,4 @@
-Bootstrap BD Theme
+Bootstrap Enterprise Theme
 =======
 Un thème designé pour Bootstrap
 -----------
