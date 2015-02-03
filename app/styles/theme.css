@@ -1,0 +1,204 @@
+/**
+ * Theme : Enterprise
+ * Author : Elfhir
+ * Informations :
+ * 		This stylesheet is composed of reusable classes for styling your content.
+ * 		It aims the same goals as Twitter Bootstrap : styling with classes,
+ * 		styling easy for "Application Developer" (essentially not Front-End, Webdesigner) ; 
+ * 		However, its philosophy suits well for web front end developement.
+ *
+ * 		All specific styles specific to the theme are "bd-" prefixed.
+ * 		Some classes are bootstrap override, and some are basic style.
+ * 	Licence : Artistic 2.0
+ */
+/* Fonts from fontsquirrel or dafont. Please, if using it, credits their authors */
+@font-face {
+    font-family: 'alegreyaregular';
+    src: url('../assets/fonts/alegreya/alegreya-regular-webfont.eot');
+    src: url('../assets/fonts/alegreya/alegreya-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/alegreya/alegreya-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/alegreya/alegreya-regular-webfont.woff') format('woff'),
+         url('../assets/fonts/alegreya/alegreya-regular-webfont.ttf') format('truetype'),
+         url('../assets/fonts/alegreya/alegreya-regular-webfont.svg#alegreyaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'andika_basicregular';
+    src: url('../assets/fonts/andika/andbasr-webfont.eot');
+    src: url('../assets/fonts/andika/andbasr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/andika/andbasr-webfont.woff2') format('woff2'),
+         url('../assets/fonts/andika/andbasr-webfont.woff') format('woff'),
+         url('../assets/fonts/andika/andbasr-webfont.ttf') format('truetype'),
+         url('../assets/fonts/andika/andbasr-webfont.svg#andika_basicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mulagoregular';
+    src: url('../assets/fonts/mulago/mulago-webfont.eot');
+    src: url('../assets/fonts/mulago/mulago-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/mulago/mulago-webfont.woff2') format('woff2'),
+         url('../assets/fonts/mulago/mulago-webfont.woff') format('woff'),
+         url('../assets/fonts/mulago/mulago-webfont.ttf') format('truetype'),
+         url('../assets/fonts/mulago/mulago-webfont.svg#mulagoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body, html {
+	font-family: 'andika_basicregular', Verdana, sans-serif;
+}
+
+a {
+	color: #00aa88;
+}
+
+a:hover, a:focus, a:active {
+	color: #008066;
+	text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 20px;
+}
+
+.ntp-font-color-1 {
+	color: #00aa88;
+}
+
+.ntp-font-color-2 {
+	color: #008066;
+}
+
+.ntp-font-color-white {
+    color: #ececec;
+}
+.ntp-bg-color-white {
+    background-color: #ececec;
+}
+.ntp-font-color-black {
+    color: #101010;
+}
+
+.ntp-font-1 {
+	font-family: 'andika_basicregular', Verdana, sans-serif;
+}
+
+.ntp-font-2 {
+	font-family: 'alegreyaregular', Georgia, serif;
+}
+
+.ntp-font-3 {
+	font-family: 'mulagoregular', Verdana, sans-serif;
+}
+
+/* Pattern from subtle patterns ; please, credits their authors */
+.ntp-pattern-1 {
+	background: url('../assets/patterns/vertical_cloth_@2X.png') repeat;
+}
+
+.ntp-pattern-2 {
+	background: url('../assets/patterns/noisy_grid.png') repeat;
+	color: #101010;
+}
+
+.ntp-pattern-3 {
+	background: url('../assets/patterns/foil.png') repeat;
+	color: #ececec;
+}
+
+.ntp-box-shadow-inset {
+	-webkit-box-shadow:inset 0 0 10px 5px rgba(0,0,0,0.5);
+			box-shadow:inset 0 0 10px 5px rgba(0,0,0,0.5);
+}
+
+.ntp-box-shadow-outset {
+	-webkit-box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+			box-shadow: 0 0 10px 5px rgba(0,0,0,0.5);
+}
+
+.ntp-box-rounded {
+	-webkit-border-radius: 10px 10px 10px 10px;
+			border-radius: 10px 10px 10px 10px;
+}
+
+.ntp-logo-navbar {
+    padding-top: 10px !important;
+}
+
+.ntp-brand-navbar {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: -0.5px;
+    padding-top: 17px !important;
+}
+
+.ntp-dropdown {
+    padding: 0 15px;
+}
+
+/* Images by Vecteezy, on deviantart.*/
+.ntp-facebook {
+	background: url('../assets/icons/iconmonstr-fb-icon.png') no-repeat center;
+}
+.ntp-facebook span {
+	opacity: 0;
+}
+
+.ntp-twitter {
+	background: url('../assets/icons/iconmonstr-tw-icon.png') no-repeat center;
+}
+.ntp-twitter span {
+	opacity: 0;
+}
+
+.ntp-googleplus {
+	background: url('../assets/icons/iconmonstr-ggp-icon.png') no-repeat center;
+}
+.ntp-googleplus span {
+	opacity: 0;
+}
+
+.ntp-pinterest {
+	background: url('../assets/icons/iconmonstr-pinterest-icon.png') no-repeat center;
+}
+.ntp-pinterest span {
+	opacity: 0;
+}
+
+/* Override Bootstrap */
+
+.btn-primary {
+	background: #008066;
+	border-color: #002b22;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background: #008066;
+	border-color: #002b22;
+}
+
+
+.form-control:focus {
+  border-color: #008066;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(38, 190, 246, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(38, 190, 246, .6);
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-repeat: repeat-x;
+    left: 535px;
+    right: 0;
+}
