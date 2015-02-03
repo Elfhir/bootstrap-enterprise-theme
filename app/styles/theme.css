@@ -72,6 +72,10 @@ p {
     text-indent: 20px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .ntp-font-color-1 {
 	color: #00aa88;
 }
@@ -136,6 +140,15 @@ p {
     padding-top: 10px !important;
 }
 
+
+
+.ntp-navbar li.ntp-nav-link:hover, .ntp-navbar li.ntp-nav-link:active, .ntp-navbar li.ntp-nav-link:focus {
+    background: #008066;
+    color: #ececec;
+    border-bottom: dashed 3px #00aa88;
+}
+
+
 .ntp-brand-navbar {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -199,6 +212,6 @@ p {
 .carousel-control.right {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
-    left: 535px;
+    left: 470px;
     right: 0;
 }
